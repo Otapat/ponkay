@@ -1,14 +1,14 @@
 # Ponkay
 
-Ponkay é um jogo simples feito em HTML, CSS e JavaScript, com o objetivo de testar habilidades de coordenação motora. O jogo consiste em controlar um macaco que pula sobre plataformas, evitando cair no chão e colidir com obstáculos.
+Ponkay é uma plataforma de jogos simples feito em HTML, CSS e JavaScript.
 
-O jogo foi desenvolvido por Paola Giulia como um projeto pessoal de estudo.
+O jogo site foi desenvolvido por Paola Giulia como um projeto pessoal de estudo.
 
-## Jogando
+## Presente e Futuro
+disponível online em https://ponkay.vercel.app/View/main.html.
+No futuro penso alocar um jogo na plataforma, então aguardem.
 
-O jogo está disponível para jogar online em https://ponkay.vercel.app/View/main.html.
 
-Para jogar, basta pressionar a barra de espaço para fazer o macaco pular. O objetivo é chegar o mais longe possível, pulando sobre as plataformas e evitando cair ou colidir com obstáculos.
 
 ## Tecnologias utilizadas
 
