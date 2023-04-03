@@ -14,7 +14,7 @@
     <style>
         @font-face {
             font-family: "Studly";
-            src: url("View/css/Fonts/Studly\ Regular.otf") format("truetype");
+            src: url("View/css/Fonts/Studly\ Regular.ttf") format("truetype");
         }
     </style>
     <title>Ponkay</title>
@@ -136,7 +136,7 @@
        
         <div id="btnLogin">
             <img src="View/css/img/gif/coração.gif" alt="">
-            <button>Login</button>
+            <button onclick="login()">Login</button>
         </div>
     </div>
 
@@ -204,6 +204,9 @@ for(let i = 0; i < imgs.length; i++) {
     }
 
   });
+}
+function login(){
+    window.location = 'View/main.html'
 }
 </script>
 
