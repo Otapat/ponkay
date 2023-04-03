@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/admMain.css">
+    <link rel="stylesheet" href="css/pesquisarUser.css">
+    <link rel="stylesheet" href="css/modalbtnSC.css">
+    <link rel="shortcut icon" href="css/img/icon.png" type="image/x-icon">
+    <script  defer src="js/adm.js"></script>
+    <!-- <script defe src="js/modalCS.js"></script> -->
+    <title>Visualizar Jogos</title>
+    <style>
+        :root{
+          --main: #66FFFF;
+          --color2:#8CBFE6;
+          --color3:#B380CC;
+          --color4:#D940B3;
+          --color5:#FF0099;
+          --color6:#622323;
+          --color7:#E2E3E4;
+          --color8:#40d982;
+          --cololor8:#EAF2EF;
+          --studly: studly;
+          --valera: valera;
+        }
+        @font-face {
+    font-family: valera;
+    src: url(css/Fonts/VarelaRound-Regular.ttf);
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+    
+    @font-face {
+        font-family: "Studly";
+        src: url("css/Fonts/Studly\ Regular.otf") format("truetype");
+    }
+    </style>
+</head>
+<header id="cabeça">
+    <img id="imgClick" src="css/img/ponkayIcon (1).png" alt="">
+    <h1 id="title">Ponkay</h1>
+    <div id="fundoImgPerfil">
+        <img id="imgPerfil" src="css/img/padrao.png" alt="">
+        <span onclick="perfilEdit()" id="selectImg"></span>
+    </div>
+    
+</header>
+<nav id="menuEsquerdo">
+    <ul>
+        <li><a href="admVisualizar.html">Visualizar Usuarios</a></li>
+        <li><a href="admCadastrarUser.html">Cadastrar Usuarios</a></li>
+        <li><a href="admVisualizarJogos.html">Visualizar Jogo</a></li>
+        <li><a href="admCadastrarJogo.html">Cadastrar Jogo</a></li>
+        <li><a href="#">Cadastrar banner</a></li>
+       <li><a href="#">Comentários</a></li>
+    </ul>
+
+</nav>
+<div id="sair">
+    <img id="imgSair" src="css/img/sair.png" alt="" >
+</div>
+
+<main id="container">
+   
+        <h2>Visualizar Jogos</h2>
+    
+   
+    <form id="containerPesquisa">
+        <input name="pesquisar" id="pesquisar" type="text" placeholder="Pesquisar">
+        <button type="submit" form="containerPesquisa" ><img src="css/img/pesquisarUser.png" alt=""></button>
+    </form>
+    
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome/Apelido</th>
+                    <th>Data</th>
+                    <th>Ações</th>
+                    <th>Imagem</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>João</td>
+                    <td>01/01/22</td>
+                    <td><a href="#">Editar</a>, <a onclick="CS('excluir')" id="excluir"  href="#">Excluir</a></td>
+                    <td><img src="css/img/jogos uploads/Design sem nome (4).gif" alt=""></td>
+                    <td>Ativo</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Maria</td>
+                    <td>02/01/22</td>
+                    <td><a href="#" onclick="('')">Editar</a>, <a onclick="CS('excluir')" href="#">Excluir</a></td>
+                    <td><img src="css/img/jogos uploads/Design sem nome (9).gif" alt=""></td>
+                    <td>Inativo</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+</main>
+
+<section id="ModalCS">
+    <div id="ImgTxt">
+        <div id="guardaimg">
+            <img id="imgModal" src="css/img/pareA.png" alt="">
+        </div>
+        <h2>Tem certeza que deseja <span></span>?</h2>
+        
+        <div id="guardaBtns">
+            <button id="cancelar" onclick="RespostaCancelar()" class="btnsModal">Cancelar</button>
+            <button id="salvar" onclick="RespostaSalvar()" class="btnsModal">Salvar</button>
+        </div>
+    </div>
+    
+</section>
+<body>
+    
+</body>
+<script>
+    var notificar = new Audio('css/efeitos sonoros/notific.mp3');
+
+function CS(palavra){
+   
+    var ModalCS = document.getElementById('ModalCS');
+    var excluir = ModalCS.querySelector('span');
+    var imgModal = document.getElementById('imgModal');
+  if (palavra == 'excluir'){
+    notificar.play();
+    excluir.style.color = 'red';
+    excluir.innerText ='Excluir';
+    ModalCS.style.display = 'flex';
+  }else if(palavra == 'oi'){
+    notificar.play();
+    imgModal.src = 'css/img/pareR.png'
+    excluir.style.color = 'green';
+    excluir.innerText ='Salvar';
+    ModalCS.style.display = 'flex';
+  }
+  
+    
+    
+
+  }
+
+  function RespostaCancelar(){
+    var ModalCS = document.getElementById('ModalCS');
+    ModalCS.style.display ='none'
+  }
+  function  RespostaSalvar(){
+    alert('salvar banco')
+  }
+</script>
+</html>

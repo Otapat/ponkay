@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/modalbtnSC.css">
+    <link rel="shortcut icon" href="css/img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/admMain.css">
+    <link rel="stylesheet" href="css/admCadastrarJogos.css">
+    <script defe src="js/modalCS.js"></script>
+    <script  defer src="js/adm.js"></script>
+    <title>Cadastrar Jogos</title>
+    <style>
+        :root{
+          --main: #66FFFF;
+          --color2:#8CBFE6;
+          --color3:#B380CC;
+          --color4:#D940B3;
+          --color5:#FF0099;
+          --color6:#622323;
+          --color7:#E2E3E4;
+          --color8:#40d982;
+          --cololor8:#EAF2EF;
+          --studly: studly;
+          --valera: valera;
+        }
+        @font-face {
+    font-family: valera;
+    src: url(css/Fonts/VarelaRound-Regular.ttf);
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+    
+    @font-face {
+        font-family: "Studly";
+        src: url("css/Fonts/Studly\ Regular.otf") format("truetype");
+    }
+    </style>
+</head>
+<body>
+    <header id="cabeça">
+        <img id="imgClick" src="css/img/ponkayIcon (1).png" alt="">
+        <h1 id="title">Ponkay</h1>
+        <div id="fundoImgPerfil">
+            <img id="imgPerfil" src="css/img/padrao.png" alt="">
+            <span onclick="perfilEdit()" id="selectImg"></span>
+        </div>
+        
+    </header>
+    <nav id="menuEsquerdo">
+        <ul>
+            <li><a href="admVisualizar.html">Visualizar Usuarios</a></li>
+            <li><a href="admCadastrarUser.html">Cadastrar Usuarios</a></li>
+            <li><a href="admVisualizarJogos.html">Visualizar Jogo</a></li>
+            <li><a href="admCadastrarJogo.html">Cadastrar Jogo</a></li>
+            <li><a href="#">Cadastrar banner</a></li>
+           <li><a href="#">Comentários</a></li>
+        </ul>
+
+    </nav>
+    <div id="sair">
+        <img id="imgSair" src="css/img/sair.png" alt="" >
+    </div>
+    
+    <main>
+        <form>
+        <div id="iconCadastrar"> 
+            <img src="css/img/game (3).gif" alt="">
+            <img src="css/img/gamePalavra.png" alt="">
+            <img src="css/img/game (4).gif" alt="">
+        </div>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+
+          <label for="desenvolvedora">Desenvolvedora:</label>
+            <input type="text" id="desenvolvedora" name="desenvolvedora" required>
+
+          <label for="genero">Gênero:</label>
+          <select id="genero" name="genero" required>
+            <option value="">Selecione...</option>
+            <option value="moda">Moda</option>
+            <option value="ação">Ação</option>
+            <option value="aventura">Aventura</option>
+            <option value="cartas">Cartas</option>
+            <option value="sorte">Sorte</option>
+          </select>
+    
+          <label for="descricao">Descrição:</label>
+         <textarea id="descricao" name="descricao" required></textarea>
+    
+          <label  id="labelImg" for="imagem">Imagem (máx. 100x100):</label>
+            <input id="input-imagem" type="file" id="imagem" name="imagem" accept="image/*" required>
+            <h2 id="txtPreview">Preview</h2>
+          <div id="preview">
+            
+            <img id="quadro" src="css/img/quadro.gif" alt="">
+            <img  id="imgView" src="" alt="">
+          </div>
+    
+          <button id="cadastrar" type="submit" onclick="CS('cadastrar', event)" value="Cadastrar">Cadastrar </button>
+        </form>
+    </main>
+    <section id="ModalCS">
+        <div id="ImgTxt">
+            <div id="guardaimg">
+                <img id="imgModal" src="css/img/pareA.png" alt="">
+            </div>
+            <h2>Tem certeza que deseja <span></span>?</h2>
+            
+            <div id="guardaBtns">
+                <button id="cancelar" onclick="RespostaCancelar()" class="btnsModal">Cancelar</button>
+                <button id="salvar" onclick="RespostaSalvar()" class="btnsModal">Salvar</button>
+            </div>
+        </div>
+        
+    </section>
+</body>
+<script>
+    const inputImagem = document.getElementById('input-imagem');
+		const previewImagem = document.getElementById('imgView');
+
+		inputImagem.addEventListener('change', () => {
+			const file = inputImagem.files[0];
+			const reader = new FileReader();
+			reader.readAsDataURL(file);
+			reader.onload = () => {
+				previewImagem.src = reader.result;
+			};
+		});
+</script>
+</html>

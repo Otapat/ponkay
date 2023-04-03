@@ -1,0 +1,122 @@
+*{
+  
+    padding: 0;
+    margin: 0;
+}
+
+#cabeça{
+    background-color:#F8579A;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   z-index: 500;
+  
+}
+#guardaTitle{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#title{
+    padding-left: 35%;
+    text-align: center;
+    cursor: pointer;
+    font-family: Studly;
+    color: var(--main);
+    font-size: 50px;
+    position: relative;
+}
+#spanTitle{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+   
+}
+#fundoImgPerfil{
+    width: 120px;
+    height: 120px;
+    background-color: rgb(255, 255, 255);
+    border: solid 2px gold;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+
+}
+#selectImg{
+    position: absolute;
+   transition: linear 0.5s;
+    z-index: 20;
+    width: 150px;
+    height:150px;
+    border-radius: 50%;
+}
+
+#selectImg:hover{
+    background-color: #00000074;
+}
+/*menu lateral esquerdo*/
+#menuEsquerdo{
+    transition: linear 0.5s;
+    display: flex;
+   left: -450px;
+    z-index: 200;
+    position: absolute;
+    width: 20%;
+    height: 100vh;
+    background-color:#F8579A;
+    padding: 10px;
+    overflow: hidden;
+}
+#menuEsquerdo ul{
+    width: 100%;
+    height: 97%;
+    background-color:#fbbcd6;
+    padding-top: 20px;
+}
+#menuEsquerdo ul li{
+    border-bottom: solid 2px rgb(254, 180, 246);
+    padding: 10px;
+    margin: 5px;
+   list-style: none;
+   cursor: pointer;
+  
+}
+#menuEsquerdo ul li a{
+  
+    font-size: 20px;
+   text-decoration: none;
+   color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+   text-transform: uppercase;
+}
+#menuEsquerdo ul li:hover
+ {
+    background-color: rgb(222, 239, 254);
+   
+}
+
+#sair{
+    margin-top: 70px;
+    width: 98%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+#imgSair{
+    width: 40px;
+    height: 40px;
+}

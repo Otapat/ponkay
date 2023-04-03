@@ -1,0 +1,232 @@
+#editarPerfil{
+    background-color: rgba(0, 0, 0, 0.664);
+  
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+#dvPaiBranco{
+    background-color:#FFE7F0;
+    width: 50%;
+    height: 90%;
+    overflow: hidden;
+   
+}
+#divColor{
+    background-image: linear-gradient(-45deg, #b43e69, rgb(5, 255, 180), rgb(194, 98, 253));
+width: 100%;
+height: 30%;
+}
+#divBranca{
+    background-color: #FFE7F0;
+    width: 100%;
+    height: 70%;
+    
+}
+#divColor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   position: relative;
+}
+#fimg{
+    width:100%;
+    height: 150%;
+    position: absolute;
+   
+ 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+#filhoimg{
+   background-color: rgb(255, 255, 255);
+   width: 100px;
+   height: 100px;
+   position: relative;
+   border-radius: 50%;
+   border:  solid 2px rgb(204, 0, 255);
+}
+
+.TitleDate{
+    padding: 50px;
+}
+.td{
+    color: #fff;
+    font-size: 20px;
+    font-family: valera;
+}
+/*editar nome*/
+#divnome{
+    margin-top: 25px;
+
+}
+#divnome-filho{
+    opacity: 0.0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+ #divnome-filho2{
+    width: 100%;
+  align-items: center;
+  justify-content: center;
+    
+    display: flex;
+   
+}
+#spanImg{
+    width: 40px;
+    height: 40px;
+}
+#spanMsg{
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+#inputNome{
+    background-color: #b43e6900;
+padding: 10px;
+border: none;
+border-bottom: solid 2px #B380CC;
+outline: none;
+width: 19%;
+font-family: Arial;
+font-size: 18px;
+color: #B380CC;
+
+}
+#divnome-filho2{
+    margin-left: 15px;
+    padding-top: 5px;
+}
+#btnEditName{
+    background-color: #b43e6900;
+    border: none;
+    cursor: pointer;
+}
+
+
+#paiForm{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+.line1-F label{
+    padding-top: 15px;
+}
+#editePerfil{
+    /* background-color: #b43e69; */
+    width: 80%;
+    height: 100%;
+}
+#editePerfil{
+    padding: 10px;
+    font-family: valera;
+    margin-top: 10px;
+    
+}
+#editePerfil input:focus{
+    border-bottom:solid 2px #bf38f4;
+}
+#editePerfil input{
+    background-color: #b43e6900;
+    font-size: 18px;
+    font-family: valera;
+    outline: none;
+    padding: 5px;
+    border: none;
+    border-bottom:solid 2px #80cbcc;
+    
+}
+#editePerfil label{
+    color: #bf38f4;
+    
+}
+#dataedit{
+    text-align: center;
+    width: 120px;
+}
+.line1, #line3{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 100%;
+}
+.line1-F input{
+display: block;
+}
+.line1-F{
+width: 50%;
+
+
+}
+#line1f2{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ #dataedit{
+   width: 120px;
+ 
+}
+#line1f2 label{
+    
+    color: #fff;
+    padding: 10px;
+    background-image: linear-gradient(-45deg, #b43e69,  rgb(194, 98, 253));
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#guardaBtn{
+   padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#btnEnviar, #btnCancel{
+    cursor: pointer;
+    color: #fff;
+    transform: scale(1.0);
+    width: 100px;
+   border-radius: 20px;
+   border-left:solid 2px #ad3094;
+   border-top: solid 2px #a32e78;
+   border-bottom: solid 2px #40016b;
+   border-right: solid 2px #40016b;
+    font-family: valera;
+    padding: 10px;
+   color: #fff;
+   background-image: linear-gradient(-45deg, #9f375d,  rgb(177, 89, 231));
+  
+    transition: ease-out 1s;
+}
+
+#btnEnviar:hover, #btnCancel:hover{
+    color: #949494;
+    border-left:solid 2px #ff53dd;
+   border-top: solid 2px #ff4abd;
+   border-bottom: solid 2px #290144;
+   border-right: solid 2px #440171;
+   background-image: linear-gradient(-45deg, #7e2b4a,  rgb(150, 75, 197));
+   transform: scale(0.98);
+}
+#btnCancel{
+    
+}

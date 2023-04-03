@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="css/img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="estrutura site/header - Copia.css">
+    <link rel="stylesheet" href="css/footer final pagina.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/menuLateral.css">
+    <link rel="stylesheet" href="css/styleModal.css">
+    <link rel="stylesheet" href="css/modalPerfil.css">
+    <link rel="stylesheet" href="css/styleGame.css">
+    <script defer src="js/menuLateral.js"></script>
+    <title>Ponkay</title>
+</head>
+
+   <style>
+        :root{
+          --main: #66FFFF;
+          --color2:#00fff2;
+          --color3:#B380CC;
+          --color4:#D940B3;
+          --color5:#FF0099;
+          --color6:#622323;
+          --color7:#E2E3E4;
+          --color8:#40d982;
+          --cololor8:#EAF2EF;
+          --studly: studly;
+          --valera: valera;
+        }
+        @font-face {
+    font-family: valera;
+    src: url(css/Fonts/VarelaRound-Regular.ttf);
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+    @font-face {
+        font-family: "Studly";
+        src: url("css/Fonts/Studly\ Regular.otf") format("truetype");
+    }
+ </style>
+ 
+<body>
+      
+    <header>
+        <div class="cabeça">
+
+            <a href="main.html"><h1>Ponkay</h1></a>
+            <nav>
+                <svg id="heartSvg" xmlns="http://www.w3.org/2000/svg" version="1.0" width="60.000000pt"
+                    height="60.000000pt" viewBox="0 0 1280.000000 1280.000000" preserveAspectRatio="xMidYMid meet">
+                    <metadata>
+                        Created by potrace 1.15, written by Peter Selinger 2001-2017
+                    </metadata>
+                    <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" stroke="none">
+                        <path id="itemSvg" fill="#5CE1E6"
+                            d="M3820 10864 c-238 -21 -540 -87 -750 -164 -252 -92 -562 -265 -764 -428 -39 -31 -122 -106 -185 -167 -429 -417 -689 -967 -750 -1589 -16 -159 -14 -484 5 -649 83 -762 416 -1452 1058 -2197 123 -143 467 -491 656 -665 322 -295 676 -588 1355 -1120 799 -626 1062 -851 1385 -1181 244 -250 418 -476 522 -679 24 -47 45 -85 48 -85 3 0 24 38 48 85 104 203 278 429 522 679 323 330 586 555 1385 1181 918 719 1287 1036 1715 1471 283 289 463 499 655 769 404 567 637 1147 700 1748 17 170 20 485 4 643 -61 622 -321 1172 -750 1589 -63 61 -146 136 -185 167 -202 163 -512 336 -764 428 -153 56 -384 114 -561 141 -208 33 -591 33 -794 1 -275 -43 -500 -114 -740 -232 -576 -284 -993 -786 -1197 -1442 -18 -59 -35 -108 -38 -108 -3 0 -20 49 -38 108 -204 656 -621 1158 -1197 1442 -351 173 -673 249 -1085 255 -118 1 -235 1 -260 -1z" />
+                    </g>
+                </svg>
+                <section id="sectionMenu">
+
+                    <div id="ContainerImg">
+                        <div id="fundoImg">
+                            <a id="imgA" href="#"><img id="imgPerfilMenu" src="../View/sprits/2.png" alt=""></a>
+                            <span id="sombraimg"></span>
+                        </div>
+
+                    </div>
+                    <div id="nomeUser">
+                        <h2>Shiba22Ç</h2>
+                    </div>
+                    <div id="listaMenu">
+                        <a onclick="abrirEditarPerfil()" href="#editarPerfil">Editar Perfil</a>
+                        <a id="indentifique" >Moderação</a>
+                    </div>
+
+                    <div id="containersair">
+                        <a id="sair" href="#">
+                            <h2>Sair</h2>
+                            <img src="css/img/icons8-sair-64.png" alt="">
+                        </a>
+
+                    </div>
+
+                </section>
+            </nav>
+
+        </div>
+    </header>
+    <main style="padding-bottom: 60px;">
+        <section id="sectionJogo">
+            <div id="nomeVoto">
+                <h2 id="NameJogo">Jogo nimuto1</h2>
+                <ul class="avaliacao">
+                    <li class="star-icon " data-avaliacao="1"></li>
+                    <li class="star-icon" data-avaliacao="2"></li>
+                    <li class="star-icon" data-avaliacao="3"></li>
+                    <li class="star-icon" data-avaliacao="4"></li>
+                    <li class="star-icon" data-avaliacao="5"></li>
+                  </ul>
+            </div>
+            <canvas id="Jogo">
+            </canvas>
+        </section>
+       
+
+       
+    </main>
+    <section id="JgAndComents">
+        <section id="linkJogos">
+            <h2 id="txt-linkJogos">Jogue também</h2>
+            <div id="guardaLink">
+                <div id="img-span">
+                    <a id="linkA" href="#">
+                        <img id="imglink" src="css/img/jogos uploads/Design sem nome (4).gif" alt="">
+                    </a>
+                  
+                </div>
+                
+                <div id="img-span">
+                    <a id="linkA" href="#">
+                        <img id="imglink" src="css/img/jogos uploads/Design sem nome (4).gif" alt="">
+                    </a>
+                   
+                </div>
+            </div>
+           
+        </section>
+        <section id="coments">
+            <div id="guardaTudoComents">
+                <h2 id="txtComents">Deixe um comentário</h2>
+                <section id="cinzaComents">
+                    <div id="guardaTudoDialogo">
+                        <div class="dialogo1">
+                            <div class="imgLetras">
+                                <div id="guardaLI">
+                                    <div id="fImgMe">
+                                        <div id="fundodaImg">
+                                            <img src="../View/sprits/10.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div id="letras">
+                                        <h3 id="titulo">User: </h3>
+                                        <h3 id="name"> Goiaba45</h3>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div id="usercoments">
+                                    <h4>joguinho bom, porem temh uma resalva   porem temh uma resalva   porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva com as pessoas que estão sobe o calado do menino </h4>
+                                </div>
+                            </div>
+                            <div id="dataHorario">
+                                <h4>21/03/2022</h4>
+                                <span>•</span>
+                                <h4>12:22</h4>
+    
+                            </div>
+                        </div>
+                        <div class="dialogo1">
+                            <div class="imgLetras">
+                                <div id="guardaLI">
+                                    <div id="fImgMe">
+                                        <div id="fundodaImg">
+                                            <img src="../View/sprits/10.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div id="letras">
+                                        <h3 id="titulo">User: </h3>
+                                        <h3 id="name"> Goiaba45</h3>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div id="usercoments">
+                                    <h4>joguinho bom, porem temh uma resalva   porem temh uma resalva   porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva com as pessoas que estão sobe o calado do menino </h4>
+                                </div>
+                            </div>
+                            <div id="dataHorario">
+                                <h4>21/03/2022</h4>
+                                <span>•</span>
+                                <h4>12:22</h4>
+    
+                            </div>
+                        </div>
+                        <div class="dialogo1">
+                            <div class="imgLetras">
+                                <div id="guardaLI">
+                                    <div id="fImgMe">
+                                        <div id="fundodaImg">
+                                            <img src="../View/sprits/10.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div id="letras">
+                                        <h3 id="titulo">User: </h3>
+                                        <h3 id="name"> Goiaba45</h3>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div id="usercoments">
+                                    <h4>joguinho bom, porem temh uma resalva   porem temh uma resalva   porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva com as pessoas que estão sobe o calado do menino </h4>
+                                </div>
+                            </div>
+                            <div id="dataHorario">
+                                <h4>21/03/2022</h4>
+                                <span>•</span>
+                                <h4>12:22</h4>
+    
+                            </div>
+                        </div>
+                        <div class="dialogo1">
+                            <div class="imgLetras">
+                                <div id="guardaLI">
+                                    <div id="fImgMe">
+                                        <div id="fundodaImg">
+                                            <img src="../View/sprits/10.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div id="letras">
+                                        <h3 id="titulo">User: </h3>
+                                        <h3 id="name"> Goiaba45</h3>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div id="usercoments">
+                                    <h4>joguinho bom, porem temh uma resalva   porem temh uma resalva   porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva com as pessoas que estão sobe o calado do menino </h4>
+                                </div>
+                            </div>
+                            <div id="dataHorario">
+                                <h4>21/03/2022</h4>
+                                <span>•</span>
+                                <h4>12:22</h4>
+    
+                            </div>
+                        </div>
+                        <div class="dialogo1">
+                            <div class="imgLetras">
+                                <div id="guardaLI">
+                                    <div id="fImgMe">
+                                        <div id="fundodaImg">
+                                            <img src="../View/sprits/10.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div id="letras">
+                                        <h3 id="titulo">User: </h3>
+                                        <h3 id="name"> Goiaba45</h3>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div id="usercoments">
+                                    <h4>joguinho bom, porem temh uma resalva   porem temh uma resalva   porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva com as pessoas que estão sobe o calado do menino </h4>
+                                </div>
+                            </div>
+                            <div id="dataHorario">
+                                <h4>21/03/2022</h4>
+                                <span>•</span>
+                                <h4>12:22</h4>
+    
+                            </div>
+                        </div>
+                        <div class="dialogo1">
+                            <div class="imgLetras">
+                                <div id="guardaLI">
+                                    <div id="fImgMe">
+                                        <div id="fundodaImg">
+                                            <img src="../View/sprits/10.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div id="letras">
+                                        <h3 id="titulo">User: </h3>
+                                        <h3 id="name"> Goiaba45</h3>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div id="usercoments">
+                                    <h4>joguinho bom, porem temh uma resalva   porem temh uma resalva   porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva com as pessoas que estão sobe o calado do menino </h4>
+                                </div>
+                            </div>
+                            <div id="dataHorario">
+                                <h4>21/03/2022</h4>
+                                <span>•</span>
+                                <h4>12:22</h4>
+    
+                            </div>
+                        </div>
+                        <div class="dialogo1">
+                            <div class="imgLetras">
+                                <div id="guardaLI">
+                                    <div id="fImgMe">
+                                        <div id="fundodaImg">
+                                            <img src="../View/sprits/10.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div id="letras">
+                                        <h3 id="titulo">User: </h3>
+                                        <h3 id="name"> Goiaba45</h3>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div id="usercoments">
+                                    <h4>joguinho bom, porem temh uma resalva   porem temh uma resalva   porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva com as pessoas que estão sobe o calado do menino </h4>
+                                </div>
+                            </div>
+                            <div id="dataHorario">
+                                <h4>21/03/2022</h4>
+                                <span>•</span>
+                                <h4>12:22</h4>
+    
+                            </div>
+                        </div>
+                        <div class="dialogo1">
+                            <div class="imgLetras">
+                                <div id="guardaLI">
+                                    <div id="fImgMe">
+                                        <div id="fundodaImg">
+                                            <img src="../View/sprits/10.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div id="letras">
+                                        <h3 id="titulo">User: </h3>
+                                        <h3 id="name"> Goiaba45</h3>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div id="usercoments">
+                                    <h4>joguinho bom, porem temh uma resalva   porem temh uma resalva   porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva com as pessoas que estão sobe o calado do menino </h4>
+                                </div>
+                            </div>
+                            <div id="dataHorario">
+                                <h4>21/03/2022</h4>
+                                <span>•</span>
+                                <h4>12:22</h4>
+    
+                            </div>
+                        </div>
+                        <div class="dialogo1">
+                            <div class="imgLetras">
+                                <div id="guardaLI">
+                                    <div id="fImgMe">
+                                        <div id="fundodaImg">
+                                            <img src="../View/sprits/10.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div id="letras">
+                                        <h3 id="titulo">User: </h3>
+                                        <h3 id="name"> Goiaba45</h3>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div id="usercoments">
+                                    <h4>joguinho bom, porem temh uma resalva   porem temh uma resalva   porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva com as pessoas que estão sobe o calado do menino </h4>
+                                </div>
+                            </div>
+                            <div id="dataHorario">
+                                <h4>21/03/2022</h4>
+                                <span>•</span>
+                                <h4>12:22</h4>
+    
+                            </div>
+                        </div>
+                        <div class="dialogo1">
+                            <div class="imgLetras">
+                                <div id="guardaLI">
+                                    <div id="fImgMe">
+                                        <div id="fundodaImg">
+                                            <img src="../View/sprits/10.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div id="letras">
+                                        <h3 id="titulo">User: </h3>
+                                        <h3 id="name"> Goiaba45</h3>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div id="usercoments">
+                                    <h4>joguinho bom, porem temh uma resalva   porem temh uma resalva   porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva com as pessoas que estão sobe o calado do menino </h4>
+                                </div>
+                            </div>
+                            <div id="dataHorario">
+                                <h4>21/03/2022</h4>
+                                <span>•</span>
+                                <h4>12:22</h4>
+    
+                            </div>
+                        </div>
+                        <div class="dialogo1">
+                            <div class="imgLetras">
+                                <div id="guardaLI">
+                                    <div id="fImgMe">
+                                        <div id="fundodaImg">
+                                            <img src="../View/sprits/10.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div id="letras">
+                                        <h3 id="titulo">User: </h3>
+                                        <h3 id="name"> Goiaba45</h3>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div id="usercoments">
+                                    <h4>joguinho bom, porem temh uma resalva   porem temh uma resalva   porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva  porem temh uma resalva com as pessoas que estão sobe o calado do menino </h4>
+                                </div>
+                            </div>
+                            <div id="dataHorario">
+                                <h4>21/03/2022</h4>
+                                <span>•</span>
+                                <h4>12:22</h4>
+    
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    
+                   
+                   
+                    <form id="envioComent" action="" method="post">
+                      
+                        <input id="inputComments" type="text">
+                        <button id="submitEnviar" form="envioComent" ><img src="css/img/enviar.png" alt=""></button>
+                    </form>
+                </section>
+               
+            </div>
+
+        </section>
+
+
+    </section>
+    
+    <footer>
+        <div id="filho-footer">
+            <div id="text-footer">
+                <h2 class="text">Corra, siga-nos na redes sociais</h2>
+            </div>
+            <div class="imgPhone"><img src="sprits/footer (1).png" alt=""></div>
+            <div class="footer-imgs">
+                <ul>
+
+                    <li><a class='pngs' href="#"><img src="sprits/footer (2).png" alt=""></a></li>
+                    <li><a class='pngs' href="#"><img src="sprits/footer (3).png" alt=""></a></li>
+                    <li><a class='pngs' href="#"><img src="sprits/footer (4).png" alt=""></a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="final">
+            <h5>© Ponkay 2022. Todos os direitos reservados.</h5>
+        </div>
+    </footer>
+
+    <article id="modalImg">
+        <div id="modalTelaCentro">
+            <div  id="containerPerfil" src="sprits/2 (1).png" >
+                <div id="fImg">
+                    <img id="imagemPerfil" src="sprits/2 (1).png" alt="">
+                </div>
+            </div>
+            <div id="containerImgs" >
+                <div id="containerimg2">
+                    <div class="fimgs"><img id="img1" src="sprits/1 (1).png" alt=""></div> 
+                    <div class="fimgs"><img src="sprits/2 (1).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/3 (1).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/4 (1).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/5 (1).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/6.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/7.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (1).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (2).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (3).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (4).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (5).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (13).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (6).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (7).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (8).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (9).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (10).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (11).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (12).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (14).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (15).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (16).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (17).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (18).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (00).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/12.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/13.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/14.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/16.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/17.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/18.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/19.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/20.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/21.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/22.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/23.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/24.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/25.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/26.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/27.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/28.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/29.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/30.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/31.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/32.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/33.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/34.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/35.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/36.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/37.png" alt=""></div>
+                </div>
+                <div id="SalvarCancel">
+                    <button id="cancelar">Cancelar</button>
+                    <button id="salvar" >Salvar</button>
+                </div>
+                    
+            
+            </div>
+            
+        </div>
+  </article>
+  <article id="modalsucesso">
+    <div id="telaBranca">
+        <div id="guardamsgSucess"><span id="msgSucess">Uau, que perfil lindo!</span></div>
+       <div id="guardaImgSucess">
+        <img id="imgUau" src="css/img/gif/uau.gif" alt="">
+       </div>
+    </div>
+  </article>
+       
+  <article id="editarPerfil">
+        <div id="dvPaiBranco">
+            
+            <div id="divColor">
+                <div class="TitleDate"><h3 class="td">Título</h3></div>
+                <div class="TitleDate"><h3 class="td">Data da criação</h3></div>
+                <div id="fimg">
+                    <div id="filhoimg">
+                        <img src="sprits/22.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="divnome">
+                <div id="divnome-filho">
+                    <img id="spanImg" src="" alt="">
+                    <span id="spanMsg"></span>
+                </div>
+                <div id="divnome-filho2">
+                    <input id="inputNome"  value="Paola" form="editePerfil" type="text" readonly>
+                
+                    <button onclick="habilitarEdicao()" id="btnEditName"> <img src="css/img/editar.svg" alt=""></button>   
+                </div>
+                
+            </div>
+            <div id="paiForm">
+                <form id="editePerfil" action="">
+                        <div class="line1">
+                            <div class="line1-F">
+                                <label for="Email">Email atual</label>
+                                <input id='Email' type="text" >
+                            </div>
+                            <div id="line1f2"  class="line1-F"> 
+                                <label for="dataedit">Ultima edição</label>
+                                <h3 id="dataedit" type="text"  >22/22/2022</h3>
+                            </div>
+                        </div>
+                        <div id="line2" >
+                            <div class="line1-F">
+                                <label for="senhaAtual">Senha atual</label>
+                                <input id='senhaAtual' type="text" >
+                            </div>
+                        </div>
+                       
+                            <div  id="line3"> 
+                                <div class="line1-F">
+                                    <label for="senhaNova">Nova senha</label>
+                                    <input id="senhaNova" type="text"  >
+                                </div>
+                               <div class="line1-F">
+                                    <label for="confSenha">Corfirme nova senha</label>
+                                    <input id="" type="text"  >
+                               </div>
+                                
+                            </div>
+                            <div id="guardaBtn">
+                                <button id="btnCancel" onclick="editCancel()" type="reset">Cancelar</button>
+                                <button id="btnEnviar" type="submit">Salvar</button>
+                            </div>
+                       
+
+                </form>
+                    
+            </div>
+           
+
+            </form>
+        </div>
+          
+    </article>
+</body>
+<script>
+   var stars = document.querySelectorAll('.star-icon');
+                  
+                  stars.forEach(function(star) {
+                    star.addEventListener('click', function(e) {
+                      var classStar = e.target.classList;
+                      if (!classStar.contains('ativo')) {
+                        stars.forEach(function(star) {
+                          star.classList.remove('ativo');
+                        });
+                        classStar.add('ativo');
+                        console.log(e.target.getAttribute('data-avaliacao'));
+                      }
+                    });
+                  });
+                  
+                  const element = document.getElementById('guardaTudoDialogo');
+element.scrollTop = element.scrollHeight;
+   /*se a pessoa for autorizada mandar para a pagina */
+   var indentifique = document.getElementById('indentifique');
+    indentifique.addEventListener('click', ()=>{
+        window.location = 'adm.html'
+    })
+
+</script>
+</html>

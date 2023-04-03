@@ -1,0 +1,86 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+    
+    
+}
+
+:root{
+    --main: #66FFFF;
+    --color2:#8CBFE6;
+    --color3:#B380CC;
+    --color4:#D940B3;
+    --color5:#FF0099;
+    --color6:#622323;
+    --color7:#E2E3E4;
+    --cololor8:#EAF2EF;
+    
+}
+
+@font-face {
+    font-family: studly;
+    src: url(Fonts/Studly\ Regular.otf);
+}
+@font-face {
+    font-family: valera;
+    src: url(Fonts/VarelaRound-Regular.ttf);
+}
+/*>>>>>>>>>>>>>>>>>HEADER<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+header{
+    display: flex;
+    justify-content: end;
+}
+
+header .cabeça{
+    position: relative;
+    
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right, #66FFFF 0%,#66FFFF 15%, #8CBFE6 15%, #8CBFE6 38%, #FF0099 38%, #FF0099 62%, #D940B3 62%,  #D940B3 85%, #B380CC 80%);     
+}
+header .cabeça a{
+    cursor: pointer;
+   text-decoration: none;
+}
+header .cabeça h1{
+    cursor: pointer;
+    font-family: studly;
+    color: #00ffff;
+    font-size: 60px;
+    padding: 10px;
+   
+    display: flex;
+    justify-content: center;
+   
+
+    
+
+
+}
+header .cabeça nav{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    
+}
+#heartSvg{
+    position: absolute;
+    top: -70px;
+    padding-right: 40px;
+    cursor: pointer;
+    
+}
+#heartSvg path:hover{
+   
+   transition: ease-in 1s;
+   
+
+}
+
+.pai{
+    
+    background-color: #ffffff;
+    width: 100%;
+    
+}

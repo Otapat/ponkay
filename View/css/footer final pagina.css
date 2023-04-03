@@ -1,0 +1,108 @@
+/*footer final pagina*/
+footer {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  
+   
+}
+footer #filho-footer{
+    margin-top: 100px;
+    width: 100%;
+    height: 200px;
+    background-color: #FFE7F0;
+}
+
+footer #filho-footer #text-footer{
+    width: 100%;
+    
+    height: 30px;
+
+}
+footer #filho-footer #text-footer h2{
+padding: 30px;
+text-align: center;
+    font-family: var(--valera);
+color: var(--color3);
+}
+
+.footer-imgs{
+    width: 100%;
+   
+    height: 200px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.footer-imgs ul{
+
+display: flex;
+
+}
+
+.footer-imgs ul li{
+    padding: 0px 40px;
+    list-style: none;
+}
+
+
+
+footer #filho-footer .footer-imgs  img {
+    max-width: 70px;
+    
+} 
+
+footer #filho-footer .imgPhone {
+    width: 50px;
+    height: 50px;
+   
+    position: absolute;
+}
+footer #filho-footer .imgPhone img{
+   max-width: 300px;
+   max-height: 300px;
+   top: -100px;
+   position: absolute;
+  
+  
+
+}
+.pngs :hover{
+    transform: scale(1.1);
+}
+
+footer .final{
+    width: 100%;
+    height: 40px;
+    background-color: var(--color3);
+    font-size: 20px;
+    text-align: center;
+   
+
+}
+
+footer .final h5{
+padding-top: 10px;
+color: white;
+font-family: Arial, sans-serif;
+}
+
+/* Define a largura do scrollbar */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Define a cor de fundo do scrollbar */
+::-webkit-scrollbar-track {
+    background-color: #e2c5ff;
+}
+
+/* Define a cor da thumb do scrollbar */
+::-webkit-scrollbar-thumb {
+    background-color: pink;
+    border-radius: 5px;
+}

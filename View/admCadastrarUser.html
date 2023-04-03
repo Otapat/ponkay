@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/admMain.css">
+    <link rel="stylesheet" href="css/modalbtnSC.css">
+    <link rel="shortcut icon" href="css/img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/admCadastrarUser.css">
+    <script defe src="js/modalCS.js"></script>
+    <script  defer src="js/adm.js"></script>
+    <title>Cadastrar Usuário
+    </title>
+    <style>
+        :root{
+          --main: #66FFFF;
+          --color2:#8CBFE6;
+          --color3:#B380CC;
+          --color4:#D940B3;
+          --color5:#FF0099;
+          --color6:#622323;
+          --color7:#E2E3E4;
+          --color8:#40d982;
+          --cololor8:#EAF2EF;
+          --studly: studly;
+          --valera: valera;
+        }
+        @font-face {
+    font-family: valera;
+    src: url(css/Fonts/VarelaRound-Regular.ttf);
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+    
+    @font-face {
+        font-family: "Studly";
+        src: url("css/Fonts/Studly\ Regular.otf") format("truetype");
+    }
+    </style>
+</head>
+<body>
+    <header id="cabeça">
+        <img id="imgClick" src="css/img/ponkayIcon (1).png" alt="">
+        <h1 id="title">Ponkay</h1>
+        <div id="fundoImgPerfil">
+            <img id="imgPerfil" src="css/img/padrao.png" alt="">
+            <span onclick="perfilEdit()" id="selectImg"></span>
+        </div>
+        
+    </header>
+    <nav id="menuEsquerdo">
+        <ul>
+            <li><a href="admVisualizar.html">Visualizar Usuarios</a></li>
+        <li><a href="admCadastrarUser.html">Cadastrar Usuarios</a></li>
+        <li><a href="admVisualizarJogos.html">Visualizar Jogo</a></li>
+        <li><a href="admCadastrarJogo.html">Cadastrar Jogo</a></li>
+        <li><a href="#">Cadastrar banner</a></li>
+       <li><a href="#">Comentários</a></li>
+        </ul>
+
+    </nav>
+    <div id="sair">
+        <img id="imgSair" src="css/img/sair.png" alt="" >
+    </div>
+  
+    <h1 id="txt">Cadastro de Usuário</h1>
+    <form>
+    <div id="iconCadastrar"><img src="css/img/pon (1).png" alt=""></div>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
+
+      <label for="tipo_usuario">Tipo de Usuário:</label>
+      <select id="tipo_usuario" name="tipo_usuario" required>
+        <option value="">Selecione...</option>
+        <option value="moderador">Moderador</option>
+        <option value="usuario">Usuário</option>
+      </select>
+
+      <button  id="cadastrar" onclick="CS('cadastrar', event)" type="submit" value="Cadastrar">Cadastrar</button>
+    </form>
+    <section id="ModalCS">
+        <div id="ImgTxt">
+            <div id="guardaimg">
+                <img id="imgModal" src="css/img/pareA.png" alt="">
+            </div>
+            <h2>Tem certeza que deseja <span></span>?</h2>
+            
+            <div id="guardaBtns">
+                <button id="cancelar" onclick="RespostaCancelar()" class="btnsModal">Cancelar</button>
+                <button id="salvar" onclick="RespostaSalvar()" class="btnsModal">Salvar</button>
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>

@@ -1,0 +1,100 @@
+nav{
+
+    z-index: 0;
+    
+}
+body{
+    overflow-x: hidden;
+}
+#sectionMenu{
+    z-index: -20;
+    margin-top: 2.1vh;
+    width: 202px;
+    height: 100vh;
+background-color: #fdd7e5;
+position: absolute;
+top: 0;
+right: 0;
+transition: transform 0.3s ease;
+transform: translateX(200px);
+overflow-x: hidden;
+
+    
+}
+#ContainerImg{
+   height: 150px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#fundoImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: azure;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    overflow: hidden;
+    border:  solid 2px orange;
+}
+#sombraimg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    
+   
+}
+#sombraimg:hover{
+    opacity: 0.5;
+    background-color: rgb(0, 0, 0)
+  
+}
+#nomeUser{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#listaMenu{
+   width: 100%;
+   height: 50vh;
+  flex-wrap: wrap;
+ 
+}
+#listaMenu a{
+   width: 97%;
+   margin-left: 5px;
+   height: 40px;
+   display: block;
+   font-size: 20px;
+   border-bottom: solid 2px #FF0099;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+}
+#listaMenu a:hover{
+    background-color: rgba(0, 255, 255, 0.24);
+}
+#containersair{
+    width: 100%;
+    display: flex;
+   margin-top: 30px;
+    justify-content: end;
+}
+#sair{
+    display: flex;
+}
+#sair h2{
+  margin-top: 20px;
+}
+#listaMenu a, #sair h2, #nomeUser{
+    font-family: 'Varela Round', sans-serif;
+    color: #FF0099;
+    
+}
+#listaMenu a{
+    text-decoration: none;
+}

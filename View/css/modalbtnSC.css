@@ -1,0 +1,65 @@
+#ModalCS{
+   
+     
+    background-color: rgba(0, 0, 0, 0.719);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+#ImgTxt{
+    box-shadow: 1px 1px 20px 10px rgb(191, 211, 255);
+    width: 30%;
+    height: 350px;
+  border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+#guardaimg{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+#guardaimg img{
+    width: 200px;
+}
+#ImgTxt h2{
+    text-align: center;
+    width: 100%;
+    
+    height: 20%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#guardaBtns{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btnsModal{
+    padding: 10px;
+  border-radius: 20px;
+  border: none;
+    width: 120px;
+    color: #fff;
+    font-size: 20px;
+}
+#cancelar{
+background-color: rgb(251, 11, 11);
+}
+#cancelar:hover{
+    background-color: rgb(159, 1, 1);
+}
+#salvar{
+    background-color: rgb(43, 251, 11);
+    }
+    #salvar:hover{
+        background-color: rgb(35, 187, 12);
+        }
+

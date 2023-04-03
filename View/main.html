@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estrutura site/header - Copia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/footer final pagina.css">
+    <link rel="stylesheet" href="css/menuLateral.css">
+    <link rel="stylesheet" href="css/PaginaMain.css">
+    <link rel="stylesheet" href="css/styleModal.css">
+    <link rel="stylesheet" href="css/modalPerfil.css">
+    <script defer src="js/menuLateral.js"></script>
+    <link rel="shortcut icon" href="css/img/icon.png" type="image/x-icon">
+    <style>
+        :root{
+          --main: #66FFFF;
+          --color2:#8CBFE6;
+          --color3:#B380CC;
+          --color4:#D940B3;
+          --color5:#FF0099;
+          --color6:#622323;
+          --color7:#E2E3E4;
+          --color8:#40d982;
+          --cololor8:#EAF2EF;
+          --studly: studly;
+          --valera: valera;
+        }
+        @font-face {
+    font-family: valera;
+    src: url(css/Fonts/VarelaRound-Regular.ttf);
+}
+    @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+    @font-face {
+        font-family: "Studly";
+        src: url("css/Fonts/Studly\ Regular.otf") format("truetype");
+    }
+      </style>
+    <title>Ponkay</title>
+</head>
+
+
+
+
+<body>
+    
+    <header>
+        <div class="cabeça">
+
+            <h1>Ponkay</h1>
+            <nav>
+                <svg id="heartSvg" xmlns="http://www.w3.org/2000/svg" version="1.0" width="60.000000pt"
+                    height="60.000000pt" viewBox="0 0 1280.000000 1280.000000" preserveAspectRatio="xMidYMid meet">
+                    <metadata>
+                        Created by potrace 1.15, written by Peter Selinger 2001-2017
+                    </metadata>
+                    <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" stroke="none">
+                        <path id="itemSvg" fill="#5CE1E6"
+                            d="M3820 10864 c-238 -21 -540 -87 -750 -164 -252 -92 -562 -265 -764 -428 -39 -31 -122 -106 -185 -167 -429 -417 -689 -967 -750 -1589 -16 -159 -14 -484 5 -649 83 -762 416 -1452 1058 -2197 123 -143 467 -491 656 -665 322 -295 676 -588 1355 -1120 799 -626 1062 -851 1385 -1181 244 -250 418 -476 522 -679 24 -47 45 -85 48 -85 3 0 24 38 48 85 104 203 278 429 522 679 323 330 586 555 1385 1181 918 719 1287 1036 1715 1471 283 289 463 499 655 769 404 567 637 1147 700 1748 17 170 20 485 4 643 -61 622 -321 1172 -750 1589 -63 61 -146 136 -185 167 -202 163 -512 336 -764 428 -153 56 -384 114 -561 141 -208 33 -591 33 -794 1 -275 -43 -500 -114 -740 -232 -576 -284 -993 -786 -1197 -1442 -18 -59 -35 -108 -38 -108 -3 0 -20 49 -38 108 -204 656 -621 1158 -1197 1442 -351 173 -673 249 -1085 255 -118 1 -235 1 -260 -1z" />
+                    </g>
+                </svg>
+                <section id="sectionMenu">
+
+                    <div id="ContainerImg">
+                        <div id="fundoImg">
+                            <a id="imgA" href="#"><img id="imgPerfilMenu" src="../View/sprits/2.png" alt=""></a>
+                            <span id="sombraimg"></span>
+                        </div>
+
+                    </div>
+                    <div id="nomeUser">
+                        <h2>Shiba22Ç</h2>
+                    </div>
+                    <div id="listaMenu">
+                        <a onclick="abrirEditarPerfil()" href="#editarPerfil">Editar Perfil</a>
+                        <a  href="adm.html" id="indentifique">Moderação</a>
+                    </div>
+
+                    <div id="containersair">
+                        <a id="sair" href="#">
+                            <h2>Sair</h2>
+                            <img src="css/img/icons8-sair-64.png" alt="">
+                        </a>
+
+                    </div>
+
+                </section>
+            </nav>
+
+        </div>
+    </header>
+    <section id="banner">
+        <div id="paiContainerSlide">
+            <div id="containerSlide">
+                <img src="css/img/banner/Novos jogos na plataforma Pokay (2).gif" alt="">
+                <img src="css/img/banner/Novos jogos na plataforma Pokay (1).gif" alt="">
+                <img src="css/img/banner/Novos jogos na plataforma Pokay (3).gif" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="sectionbtnsJg">
+        <div id="btnJg">
+            <button class="btnsJogos" id="btn1">Ação</button>
+            <button class="btnsJogos" id="btn2">Aventura</button>
+            <button class="btnsJogos" id="btn3">Cartas</button>
+            <button class="btnsJogos" id="btn4">Sorte</button>
+            <button class="btnsJogos" id="btn5">Moda</button>
+        </div>
+        <section id="containerlinksJogos">
+
+            <div id="quadradolinks">
+                <h1 id="linkClicado">Moda</h1>
+                <div id="linksJogos">
+
+                    <a id="linkjg" href="game.html">
+                        <img src="css/img/jogos uploads/Design sem nome (10).gif" alt="">
+                        <h2>Dia de vacinar</h2>
+                    </a>
+
+
+                    <a id="linkjg" href="#">
+                        <img src="css/img/jogos uploads/Design sem nome (6).gif" alt="">
+                        <h2>Miua que ir viajar</h2>
+                    </a>
+                    <a id="linkjg" href="#">
+                        <img src="css/img/jogos uploads/Design sem nome (7).gif" alt="">
+                        <h2>Miua</h2>
+                    </a>
+                    <a id="linkjg" href="#">
+                        <img src="css/img/jogos uploads/Design sem nome (8).gif" alt="">
+                        <h2>Miua</h2>
+                    </a>
+                    <a id="linkjg" href="#">
+                        <img src="css/img/jogos uploads/Design sem nome (9).gif" alt="">
+                        <h2>Miua</h2>
+                    </a>
+
+                    <a id="linkjg" href="#">
+                        <img src="css/img/jogos uploads/Design sem nome (2).gif" alt="">
+                        <h2>Amigas na moda</h2>
+                    </a>
+
+
+                    <a id="linkjg" href="#">
+                        <img src="css/img/jogos uploads/Design sem nome (3).gif" alt="">
+                        <h2>Help my friend jubbnmi</h2>
+                    </a>
+
+
+                    <a id="linkjg" href="#">
+                        <img src="css/img/jogos uploads/Design sem nome (4).gif" alt="">
+                        <h2>Miua</h2>
+                    </a>
+
+                    <a id="linkjg" href="#">
+                        <img src="css/img/jogos uploads/Design sem nome (5).gif" alt="">
+                        <h2>já vou já lá</h2>
+                    </a>
+
+
+
+                    <a id="linkjg" href="#">
+                        <img src="css/img/jogos uploads/Design sem nome (6).gif" alt="">
+                        <h2>Miua que ir viajar</h2>
+                    </a>
+                    <a id="linkjg" href="#">
+                        <img src="css/img/jogos uploads/Design sem nome (7).gif" alt="">
+                        <h2>Miua</h2>
+                    </a>
+                    <a id="linkjg" href="#">
+                        <img src="css/img/jogos uploads/Design sem nome (8).gif" alt="">
+                        <h2>Miua</h2>
+                    </a>
+                    <a id="linkjg" href="#">
+                        <img src="css/img/jogos uploads/Design sem nome (9).gif" alt="">
+                        <h2>Miua</h2>
+                    </a>
+
+
+
+
+
+
+                </div>
+                <div id="btnsRP">
+                    <button class="EP" id="R">Retroceder</button>
+                    <button class="EP" id="P">Proximo</button>
+                </div>
+
+        </section>
+
+    </section>
+  
+    <footer>
+        <div id="filho-footer">
+            <div id="text-footer">
+                <h2 class="text">Corra, siga-nos na redes sociais</h2>
+            </div>
+            <div class="imgPhone"><img src="sprits/footer (1).png" alt=""></div>
+            <div class="footer-imgs">
+                <ul>
+
+                    <li><a class='pngs' href="#"><img src="sprits/footer (2).png" alt=""></a></li>
+                    <li><a class='pngs' href="#"><img src="sprits/footer (3).png" alt=""></a></li>
+                    <li><a class='pngs' href="#"><img src="sprits/footer (4).png" alt=""></a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="final">
+            <h5>© Ponkay 2022. Todos os direitos reservados.</h5>
+        </div>
+
+
+    </footer>
+    <article id="modalImg">
+        <div id="modalTelaCentro">
+            <div  id="containerPerfil" src="sprits/2 (1).png" >
+                <div id="fImg">
+                    <img id="imagemPerfil" src="sprits/2 (1).png" alt="">
+                </div>
+            </div>
+            <div id="containerImgs" >
+                <div id="containerimg2">
+                    <div class="fimgs"><img id="img1" src="sprits/1 (1).png" alt=""></div> 
+                    <div class="fimgs"><img src="sprits/2 (1).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/3 (1).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/4 (1).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/5 (1).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/6.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/7.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (1).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (2).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (3).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (4).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (5).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (13).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (6).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (7).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (8).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (9).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (10).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (11).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (12).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (14).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (15).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (16).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (17).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (18).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/sprit-trasparente (00).png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/12.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/13.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/14.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/16.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/17.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/18.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/19.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/20.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/21.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/22.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/23.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/24.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/25.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/26.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/27.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/28.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/29.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/30.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/31.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/32.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/33.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/34.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/35.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/36.png" alt=""></div>
+                     <div class="fimgs"><img src="sprits/37.png" alt=""></div>
+                </div>
+                <div id="SalvarCancel">
+                    <button id="cancelar">Cancelar</button>
+                    <button id="salvar" >Salvar</button>
+                </div>
+                    
+            
+            </div>
+            
+        </div>
+  </article>
+  <article id="modalsucesso">
+    <div id="telaBranca">
+        <div id="guardamsgSucess"><span id="msgSucess">Uau, que perfil lindo!</span></div>
+       <div id="guardaImgSucess">
+        <img id="imgUau" src="css/img/gif/uau.gif" alt="">
+       </div>
+    </div>
+  </article>
+       
+  <article id="editarPerfil">
+        <div id="dvPaiBranco">
+            
+            <div id="divColor">
+                <div class="TitleDate"><h3 class="td">Título</h3></div>
+                <div class="TitleDate"><h3 class="td">Data da criação</h3></div>
+                <div id="fimg">
+                    <div id="filhoimg">
+                        <img src="sprits/22.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="divnome">
+                <div id="divnome-filho">
+                    <img id="spanImg" src="" alt="">
+                    <span id="spanMsg"></span>
+                </div>
+                <div id="divnome-filho2">
+                    <input id="inputNome"  value="Paola" form="editePerfil" type="text" readonly>
+                
+                    <button onclick="habilitarEdicao()" id="btnEditName"> <img src="css/img/editar.svg" alt=""></button>   
+                </div>
+                
+            </div>
+            <div id="paiForm">
+                <form id="editePerfil" action="">
+                        <div class="line1">
+                            <div class="line1-F">
+                                <label for="Email">Email atual</label>
+                                <input id='Email' type="text" >
+                            </div>
+                            <div id="line1f2"  class="line1-F"> 
+                                <label for="dataedit">Ultima edição</label>
+                                <h3 id="dataedit" type="text"  >22/22/2022</h3>
+                            </div>
+                        </div>
+                        <div id="line2" >
+                            <div class="line1-F">
+                                <label for="senhaAtual">Senha atual</label>
+                                <input id='senhaAtual' type="text" >
+                            </div>
+                        </div>
+                       
+                            <div  id="line3"> 
+                                <div class="line1-F">
+                                    <label for="senhaNova">Nova senha</label>
+                                    <input id="senhaNova" type="text"  >
+                                </div>
+                               <div class="line1-F">
+                                    <label for="confSenha">Corfirme nova senha</label>
+                                    <input id="" type="text"  >
+                               </div>
+                                
+                            </div>
+                            <div id="guardaBtn">
+                                <button id="btnCancel" onclick="editCancel()" type="reset">Cancelar</button>
+                                <button id="btnEnviar" type="submit">Salvar</button>
+                            </div>
+                       
+
+                </form>
+                    
+            </div>
+           
+
+            </form>
+        </div>
+          
+    </article>
+
+</body>
+<script>
+
+
+   
+    
+    
+/*CLICAR NO LINK JOGOS */
+const btns = document.querySelectorAll('#btnJg button');
+const trocarlinkClicado = document.getElementById('linkClicado');
+const quadrado = document.getElementById('quadradolinks');
+
+const idCorMap = {
+  btn1: '#66FFFF',
+  btn2: '#8CBFE6',
+  btn3: ' #B380CC',
+  btn4: '#40d982',
+  btn5: '#FF0099'
+};
+
+btns.forEach((btn) => { //procura dentro os btns qual btn foi clicado
+  btn.addEventListener('click', (e) => {
+    const txt = btn.innerText; //pega o texto do button
+    trocarlinkClicado.innerText = txt; //coloca no meu quadrado o txt do btn
+
+    const btnId = btn.getAttribute('id'); //pega o id do btn clicado
+    const corBtn = idCorMap[btnId]; //procura ele na minha lista
+
+    quadrado.style.borderWidth = '4px';
+    quadrado.style.borderColor = corBtn;
+  });
+});
+
+/*banner */
+
+
+const containerSlide = document.querySelector('#containerSlide');
+    let conte = 0;
+
+    setInterval(moverDiv, 4000);
+
+    function moverDiv() {
+      
+        if (conte <= -1100 * (containerSlide.children.length - 1)) {
+            // Remove a transição suave no primeiro slide
+            containerSlide.children[0].style.transition = 'none';
+            conte = 0;
+        } else {
+            containerSlide.style.transition = 'transform 0.9s linear'; // adiciona a transição suave
+            containerSlide.style.transform = `translateX(${conte}px)`;
+            conte -= 1065;
+        }
+
+    }
+
+    /*moderação*/
+      /*se a pessoa for autorizada mandar para a pagina */
+    var indentifique = document.getElementById('indentifique');
+    indentifique.addEventListener('click', ()=>{
+        window.location = 'adm.html'
+    })
+  
+</script>
+
+</html>
