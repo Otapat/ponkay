@@ -22,28 +22,36 @@
 
 
 .pai section{
-    width: 60%;
+    width: 100%;
     display: table;
     margin: 0 auto;
 
 }
 /*IMAGEN hello<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+#hello{
+    max-width: 100%;
+}
 .pai section #blocoCinza img{
-    max-width: 300px;
+    
+ 
     display: table;
     margin: 0 auto;
     padding: 40px 0px;
 }
-
+.imgs{
+    max-width: 100%;
+}
 
 /*>>>>>>>>>>>>>>>>>>>>> todos os Textos<<<<<<<<<<<<<<<<<<<<<*/
 .text{
     color: var(--color3);
     font-family: valera;
     text-align: center;
+    font-size: 200%;
 
 }
 .pai section #texttop{
+    width: 100%;
     padding-top: 20px;
     padding-bottom: 30px;
    font-size: 40px;
@@ -58,32 +66,30 @@ section{
    
     background-color: rgb(228, 228, 228);
     border-radius: 40px;
-   
+   padding: 5%;
    margin: 0 auto;
    display: table;
-   width: 70%;
-   overflow-y: hidden;
+   width: 30%;
+   
    
 }
 
 .pai section #blocoCinza form {
-    width: 20px;
+   width: 100%;
     height: 600px;
     display: table;
    margin: 0 auto;
    color:#FF0099;
    font-family: valera;
-   font-size: 20px;
+   font-size: 105%;
    
     
 }
-#meuForm{
-    height: 200px;
-    overflow: hidden    ;
-}
+
+
 .pai section #blocoCinza form input{
-   width: 400px;
-   padding: 20px;
+   width: 88%;
+  padding: 5%;
    border: none;
    font-size: 20px;
    margin: 5px;
@@ -94,7 +100,14 @@ section{
    overflow: hidden;
 
 }
+.alinhar_inputs{
+    width: 100%;
 
+}
+.alinhar{
+    width: 100%;
+   
+}
 
 .pai section #blocoCinza form input::placeholder{
     color: rgb(170, 170, 170);
@@ -107,20 +120,27 @@ section{
 
 .pai section #blocoCinza form label{
     padding-top: 10px;
-    
+    display: block;
 
     margin: 1%;
 
 
 }
 /*______CARROUSEL______________*/
+#pai-Carrousel{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
 .carrousel{
  
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: var(--color7);
     height: 150px;
-    width:100%;
+    width:95%;
     background-color: #d8d8d8;
     border-radius: 10px;
     display: flex;
@@ -171,7 +191,7 @@ section{
 
 .btns{
     margin:  0 auto;
-    width: 45%;
+    width: 75%;
    
     
 
@@ -287,7 +307,7 @@ display: flex;
 
 
 footer #filho-footer .footer-imgs  img {
-    max-width: 70px;
+    max-width: 70%;
     
 } 
 
@@ -314,7 +334,7 @@ footer .final{
     width: 100%;
     height: 40px;
     background-color: #B380CC;
-    font-size: 20px;
+  
     text-align: center;
    
 
@@ -324,4 +344,73 @@ footer .final h5{
 padding-top: 10px;
 color: white;
 font-family: Arial, sans-serif;
+font-size: 90%;
 }
+
+/*Parada */
+
+@media (max-width: 937px) {
+    .imgPhone {
+      display: none;
+    }
+  }
+  
+ 
+  
+  @media (min-width: 937px) and (max-width: 1000px) {
+    .imgPhone {
+        display: block;
+      }
+      
+  }
+  
+  
+  @media (max-width: 700px) {
+    .text{
+        font-size: 150%;
+      
+    
+    }
+   
+   
+   
+    .footer-imgs ul li{
+        padding: 0px 10px;
+        list-style: none;
+    }
+  }
+  @media (max-width: 750px) {
+    .text{
+        font-size: 150%;
+      
+    
+    }
+    .pai section #blocoCinza {
+   
+       width: 80%;
+       
+       
+    }
+    #hello{
+        width: 70%;
+    }
+}
+@media (max-width: 900px) {
+    .text{
+        font-size: 150%;
+      
+    
+    }
+   
+    
+   
+  }
+  @media (max-width: 300px) {
+    .text{
+        font-size: 70%;
+      
+    
+    }
+  }
+
+  
